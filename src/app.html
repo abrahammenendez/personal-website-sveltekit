@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!-- Basic Page Needs -->
+		<meta charset="utf-8" />
+
+		<!-- Use the title from a page's frontmatter if it has one -->
+		<title>Abraham Menéndez</title>
+		<meta
+			content="Abraham Menéndez is a Spanish software developer based in Amsterdam (Netherlands)."
+			name="description"
+		/>
+		<meta content="Abraham Menéndez" name="author" />
+		<link href="https://www.abrahammenendez.com" rel="canonical" />
+
+		<!-- Browser/Mobile Specific Metas -->
+		<meta content="ie=edge" http-equiv="x-ua-compatible" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="Abraham Menéndez" name="apple-mobile-web-app-title" />
+		<meta content="yes" name="mobile-web-app-capable" />
+		<meta content="True" name="HandheldFriendly" />
+
+		<!-- Open Graph Metas -->
+		<meta content="https://www.abrahammenendez.com" property="og:url" />
+		<meta content="website" property="og:type" />
+		<meta content="Abraham Menéndez" property="og:title" />
+		<meta
+			content="Abraham Menéndez is a Spanish software developer based in Amsterdam (Netherlands)."
+			property="og:description"
+		/>
+		<meta content="Abraham Menéndez" property="og:site_name" />
+		<meta content="/images/favicon.png" property="og:image" />
+
+		<!-- Twitter Card data  -->
+		<meta content="summary_large_image" name="twitter:card" />
+		<meta content="@whoisabraham" name="twitter:site" />
+		<meta content="Abraham Menéndez" name="twitter:title" />
+		<meta
+			content="Abraham Menéndez is a Spanish software developer based in Amsterdam (Netherlands)."
+			name="twitter:description"
+		/>
+		<meta content="@whoisabraham" name="twitter:creator" />
+		<meta content="/images/logo.png" name="twitter:image" />
+
+		<!-- CSS -->
+		<link href="/css/normalize.css" rel="stylesheet" />
+
+		<!-- JS -->
+		<!-- None. -->
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="/images/favicon.png" />
+
+		<!-- Svelte -->
+		%sveltekit.head%
+	</head>
+	<!-- Google Analytics tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RPZFS89TJ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3RPZFS89TJ');
+	</script>
+
+	<body data-sveltekit-preload-data="hover" class="dark-mode">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+
+	<script>
+		const lightModeClass = 'light-mode';
+		const darkModeClass = 'dark-mode';
+		const modeToggle = document.getElementById('modeToggle');
+		const lightModeToggled = localStorage.getItem('dark-mode') === 'false';
+
+		if (lightModeToggled) {
+			setLightMode();
+		}
+
+		modeToggle.addEventListener('click', function () {
+			document.body.classList[0] === lightModeClass ? setDarkMode() : setLightMode();
+		});
+
+		function setDarkMode() {
+			document.body.classList = darkModeClass;
+			modeToggle.innerHTML = '🌕';
+			localStorage.setItem('dark-mode', 'true');
+		}
+
+		function setLightMode() {
+			document.body.classList = lightModeClass;
+			modeToggle.innerHTML = '🌑';
+			localStorage.setItem('dark-mode', 'false');
+		}
+	</script>
+</html>
