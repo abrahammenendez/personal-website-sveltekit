@@ -23,6 +23,7 @@
 
 	#header-container {
 		margin-top: 25px;
+		margin-bottom: 26px;
 		display: flex;
 		justify-content: space-between;
 		align-self: flex-start;
@@ -44,7 +45,7 @@
 		align-items: center;
 		gap: 15px;
 		margin-top: 0;
-		margin-bottom: 0;
+		margin-bottom: 0px;
 	}
 
 	nav ul li {

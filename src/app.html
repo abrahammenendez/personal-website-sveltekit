@@ -74,9 +74,9 @@
 	</body>
 
 	<script>
-		const lightModeClass = "light-mode";
-		const darkModeClass = "dark-mode";
-		const modeToggle = document.getElementById("modeToggle");
+		const lightModeClass = 'light-mode';
+		const darkModeClass = 'dark-mode';
+		const modeToggle = document.getElementById('modeToggle');
 		const darkModeStorage = 'dark-mode'; // Separate variable improves decoupling.
 
 		const isLightModePreferredByUser = localStorage.getItem(darkModeStorage) === 'false';
@@ -84,19 +84,19 @@
 			setLightMode();
 		}
 
-		modeToggle.addEventListener("click", function () {
+		modeToggle.addEventListener('click', function () {
 			document.body.classList.contains(lightModeClass) ? setDarkMode() : setLightMode();
 		});
 
 		function setDarkMode() {
 			document.body.classList = darkModeClass;
-			modeToggle.innerHTML = "🌕";
+			modeToggle.innerHTML = '🌕';
 			localStorage.setItem(darkModeStorage, 'true');
 		}
 
 		function setLightMode() {
 			document.body.classList = lightModeClass;
-			modeToggle.innerHTML = "🌑";
+			modeToggle.innerHTML = '🌑';
 			localStorage.setItem(darkModeStorage, 'false');
 		}
 	</script>
