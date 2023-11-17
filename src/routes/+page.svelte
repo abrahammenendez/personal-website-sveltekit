@@ -3,7 +3,7 @@
 </p>
 
 <p>
-	If you are here, you probably already know that I love building software. These days I'm doing it
+	If you have found your way here, you probably already know that I love building software. These days I'm doing it
 	at
 	<a class="current-job" href="https://gorillas.io/en" target="_blank" rel="noopener noreferrer"
 		>Gorillas</a
@@ -26,7 +26,7 @@
 		href="https://gumroad.com/"
 		target="_blank"
 		rel="noopener noreferrer">Gumroad</a
-	>, an e-commerce platform that makes it very easy for creators to get paid for their work. Check
+	>, an e-commerce platform that makes it incredibly easy for creators to get paid for their work. Feel free to check
 	it out if it piques your interest!
 </p>
 
@@ -36,16 +36,16 @@
 		href="https://exercism.com/"
 		target="_blank"
 		rel="noopener noreferrer">Exercism</a
-	>, a not-for-profit organization that teaches programming to anyone who wants to learn.
+	>, a not-for-profit organization dedicated to teaching programming to anyone eager to learn.
 </p>
 
 <p>
-	Social media is not my thing (there are too many distractions nowadays), but I do have a <a
+	Social media isn't really my thing (too many distractions nowadays), but I do have a <a
 		class="short-form-social"
 		href="https://twitter.com/whoisabraham"
 		target="_blank"
 		rel="noopener noreferrer">Twitter</a
-	> that I mostly use to retweet other people's opinions. I'm exploring different platforms to share
+	> that I mainly use to retweet other people's opinions. I'm exploring different platforms to share
 	more in-depth thoughts, but I haven't found the right one yet.
 </p>
 
