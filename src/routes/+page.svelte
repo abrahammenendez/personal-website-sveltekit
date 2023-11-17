@@ -36,7 +36,7 @@
 		href="https://exercism.com/"
 		target="_blank"
 		rel="noopener noreferrer">Exercism</a
-	>, a not-for-profit organization that teaches programming.
+	>, a not-for-profit organization that teaches programming to anyone who wants to learn.
 </p>
 
 <p>
